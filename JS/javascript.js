@@ -1,4 +1,16 @@
-window.onload = function(){
+function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            oldonload();
+            func();
+        };
+    }
+};
+//----------------------------导航栏------------------------------------------------------------
+function fun1(){
     var jdNav = document.getElementById("jd-nav");
     var nav = jdNav.getElementsByTagName("li");
     for(var i=0; i<nav.length; i++){
@@ -20,3 +32,23 @@ window.onload = function(){
         };
     }
 };
+addLoadEvent(fun1);
+//------------------------服装鞋包tab栏--------------------------------------------------------
+function floor1(){
+    var tabu = document.getElementById('clo-ua').getElementsByTagName('a');
+    var tabd = document.getElementById('clo-ub').getElementsByClassName('clo-ubr');
+    for (var i = 0; i < tabu.length; i++) {
+        tabu[i].index = i;
+        tabu[i].onmouseover = function() {
+            for (var i = 0; i < tabu.length; i++) {
+                tabu[i].className = '';
+            }
+            this.className = 'clo-selected';
+            for (var i = 0; i < tabu.length; i++) {
+                tabd[i].style.display = 'none';
+            }
+            tabd[this.index].style.display = 'block';
+        };
+    }
+};
+addLoadEvent(floor1);
