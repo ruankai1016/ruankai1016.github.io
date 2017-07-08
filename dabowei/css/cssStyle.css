@@ -1,0 +1,1409 @@
+/*  覆盖bootstrap里p标签的margin样式  */
+p {
+    margin: 0;
+}
+/*h3 {*/
+    /*margin-top: 0;*/
+/*}*/
+
+/*  覆盖bootstrap里面对ul，ol的样式设置  */
+ul, ol {
+    margin-bottom: 0;
+}
+body {
+    font:  1.4vh/1 'Microsoft Yahei'; /*  设置页面根字体  */
+    width: 100%;
+    min-width: 768px;
+    height: 100%;
+    background-color: #fff;
+}
+
+/*@media screen and (max-width: 1370px) {*/
+   /*.banner {*/
+       /*height: 400px;*/
+   /*};*/
+/*}*/
+/*@media screen and (max-width: 1920px) {*/
+    /*.banner {*/
+        /*height: 800px;*/
+    /*};*/
+/*}*/
+
+
+/*  顶部  */
+.top {
+    width: 100%;
+    height: 0;
+    padding: 1.77%;
+    background: #2d3e50;
+    color: #fff;
+    position: relative;
+}
+.top-wrap {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+.company-name {
+    height: 100%;
+    float:left;
+    margin-left: 12.5%;
+    display: flex;
+    align-items: center;
+}
+.login {
+    width: 43.5%;
+    height: 100%;
+    float: right;
+    position: relative;
+    z-index: 1;
+    top: 20.83%;
+    background: url("../imgs/top-right-bgc.png") no-repeat;
+    background-size: 100% 100%;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+.login-ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.login-li {
+    /* float:left; */
+    text-align: center;
+    line-height: 3.4vh;
+    cursor: pointer;
+}
+.login-ul .v-line {
+    margin: 0 2%;
+    cursor: default;
+}
+
+/*  头部  */
+.nav-wrap {
+    width: 100%;
+    height: 0;
+    padding-bottom: 6.458%;
+    background-color: #fff;
+    position: relative;
+}
+.nav-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.logo-wrap {
+    width: 50%;
+    height: 100%;
+     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo {
+    width: 29.637%;
+    height: 53.706%;
+    margin-left: 25%;
+}
+.nav-wrap nav {
+    width: 50%;
+    display: flex;
+}
+.head-nav {
+    width: 56%;
+}
+.head-nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+}
+.head-nav ul li {
+    flex-grow: 1;
+    cursor: pointer;
+}
+.head-nav a {
+    color: #2d3e50;
+    text-decoration: none;
+}
+.head-nav .home-a-active {
+    color: #2e7ec3;
+}
+
+.head-search {
+    width: 44%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.head-search-icon {
+    background-color: #71c8f0;
+    width: 2.1vh;
+    height: 2.1vh;
+    margin-left: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head-search-icon i {
+    color: #fff;
+    font-size: 1.4vh;
+}
+
+/*  banner部分  */
+.banner {
+    width: 100%;
+    height: 0;
+    padding-bottom: 41.66%;
+    position: relative;
+}
+.banner-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner-bg ul {
+    width: 400%;
+    height: 100%;
+}
+.banner-bg li {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.banner-bg li img {
+    width: 100%;
+    height: 100%;
+}
+.banner-mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner-mask-bg {
+    width: 58.5%;
+    height: 100%;
+    float: right;
+    background: url("../imgs/banner-left.png") no-repeat;
+    background-size: 100% 100%;
+}
+.banner-mask-warp {
+    width: 100%;
+    height: 100%;
+    padding-left: 22%;
+}
+.banner-mask-text {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.banner-mask-text .banner-ul {
+    width:400%;
+    height:100%;
+}
+.banner-mask-text .banner-li {
+    width: 25%;
+    height: 100%;
+    font: 1.8vh/1.8 'Microsoft Yahei';
+    color: #fff;
+}
+.banner-li-warp {
+    width: 100%;
+    height: 100%;
+    padding: 18% 0;
+}
+.banner-li-warp .down-text {
+    margin: 15% 0 25%;
+}
+.banner-mask-text .ctrl-height {
+    height: 20%;
+    flex: 1;
+}
+.banner-mask-text .top-pic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.banner-mask-text .view-details .a-details {
+    padding: 1% 3%;
+    color: #fff;
+    background-color: #2d3e50;
+    position: relative;
+    top: -66%;
+    text-decoration: none;
+}
+.banner-mask-text .view-details .a-details:hover {
+    background-color: #2e7ec3;
+}
+.banner-mask-text .top-pic .top-cont {
+    width: 100%;
+    height: 100%;
+}
+.banner-mask-text .top-pic .top-cont img {
+    width: 40.22%;
+    height: 118.18%;
+    margin-bottom: 2%
+}
+.banner-mask-text .top-pic .b-line {
+    border-bottom: 0.3vh solid #fff;
+    width: 30%;
+    height: 0;
+}
+
+/* banner轮播图控制按钮 */
+.ctrl-banner {
+    position: relative;
+    width: 4.8%;
+    height: 0;
+    padding-bottom: 9.6%;
+}
+.ctrl-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 170%;
+    left: 100%;
+}
+.ctrl-banner .ctrl-ul {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.warp-i {
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    background-color: #b9b9b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.t-left {
+    position: relative;
+    top: -20%;
+}
+.warp-i .iconfont {
+    font-size: 3.4vh;
+    color: #fff;
+}
+
+/*  真诚服务  */
+.singere-service {
+    width: 100%;
+	height: 0;
+    padding-bottom: 49.06%;
+    position: relative;
+}
+.singere-service-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* -----------公用部分-------------- */
+.common-title {
+	width: 100%;
+	height: 18%;
+    position: relative;
+}
+.common-title-container {
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 0 45%;
+    margin: 3% auto;
+}
+.container-title {
+    border-bottom: 0.2vh solid #2d3e50;
+    padding-bottom: 15%;
+    position: relative;
+}
+.icon-warp {
+	width: 25%;
+	height: 14px;
+	background: #fff;
+	margin: 0 auto;
+	position: absolute;
+	bottom: -7px;
+    left: 38%;
+}
+.common-title .line-1 {
+    font: 2.4vh/1.6 'Microsoft Yahei';
+}
+.common-title .line-2 {
+	font: 1.4vh/1.2 'Microsoft Yahei';
+}
+/*  ------------------  */
+
+.show {
+	width: 58%;  /*  1122px  */
+	height: 0;
+    padding-bottom: 25.52%;
+    position: relative;
+	margin: 0 auto;
+}
+.show .show-warp {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.show .service {
+    width: 30%;
+    height: 100%;
+    background: #f6f6f6;
+    border-bottom: 1px solid #2e7ec3;
+    position: relative;
+}
+.show .service:hover {
+    background: #fff;
+    box-shadow: 0 0 3vh rgba(226, 226, 226, .5);
+    -webkit-box-shadow: 0 0 3vh rgba(226, 226, 226, .5);
+    -moz-box-shadow: 0 0 3vh rgba(226, 226, 226, .5);
+}
+.service-img {
+    width: 80%;
+    height: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -5%;
+}
+.service-text {
+    width: 100%;
+    height: 32%;
+}
+/*.mask-text {*/
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 15%;*/
+    /*background-color: transparent;*/
+/*}*/
+.show .service h3 {
+    color: #2d3e50;
+    font: 1.8vh/1.4 "Microsoft Yahei";
+    margin-left: 11%;
+}
+.show .service p {
+    color: #2d3e50;
+    font: 1.4vh/1.4 "Microsoft Yahei";
+    margin:0 11%;
+}
+.show .service .service-details {
+    color: #fff;
+    background-color: #2e7ec3;
+    width: 50%;
+    height: 0;
+    padding-bottom: 12%;
+    position: absolute;
+    bottom: -4%;
+    left: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /*align-content: center;*/
+}
+.service-details span {
+    padding-top: 22%;
+}
+.show .service .service-details:hover {
+    background: #2d3e50;
+}
+.all-sertice {
+    width: 100%;
+    margin-top: 4.5%;
+    display: flex;
+    justify-content: center;
+}
+.all-sertice a {
+    display: block;
+    width: 11%;
+    padding: 0.8% 0;
+    font: 1.8vh/1 "Microsoft Yahei";
+    text-align: center;
+    background: #2e7ec3;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*  成功案例  */
+.successful-case {
+    width: 100%;
+    height: 0;
+    padding-bottom: 25%;
+    position: relative;
+    background: url('../imgs/successful-case.png') no-repeat;
+    color: #fff;
+}
+.successful-case-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.successful-case .icon-warp {
+    background-color: #2d3e50;
+}
+.successful-case .container-title {
+    border-bottom-color: #fff;
+}
+
+.case-show {    
+    width: 58%;
+    height: 42%;
+    margin: 4.5% auto;
+}
+.case-show .case-warp {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+.case-outline span {
+    display: inline-block;
+    width: 60%;
+    border: 1px solid #fff;
+    margin: 21% 0 42%;
+}
+.p-line3 {
+    font-size: 3.4vh;
+}
+.p-line3 i {
+    line-height: 3.4vh;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+/*  选择我们  */
+.choose-us .common-title-container {
+    margin: 4% auto 4%;
+}
+.choose-us {
+    width: 100%;
+    height: 0;
+    padding-bottom: 34%;
+    position: relative;
+}
+.choose-us-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.us-show {
+    width: 62.5%;
+    height: 60%;
+    margin: 3% auto;
+}
+.us-show .us-warp {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+.us-warp .iconfont {
+    font-size: 11vh;
+    color: #2e7ec3;
+}
+.us-warp .us-count {
+    height: 100%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.us-warp .p-line2 {
+    font: 1.8vh/1 'Microsoft Yahei';
+    margin: 14% 0 10%;
+}
+.us-warp .p-line3 {
+    font: 1.4vh/1 'Microsoft Yahei';
+    margin: 2% 0;
+}
+
+
+/*  页脚  */
+.footer-count {
+    width: 100%;
+    height: 0;
+    padding-bottom: 21.875%;
+    background-color: #2d3e50;
+    margin-top: 3%;
+    position: relative;
+}
+.footer-count-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer-heart {  
+    width: 58%;
+    height: 78%;
+    margin: 4.8% auto 0;
+    color: #fff;
+}
+.foot-up {
+    position: absolute;
+    top: -8%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    background: url('../imgs/footupleft.png') no-repeat;
+    background-size: 48% 100%;
+}
+.left-text {
+    margin-left: 21%;
+    cursor: default;
+}
+.left-text .p-line1 {
+    margin-top: 1.5%;
+    font: 2.4vh/1.6 "Microsoft Yahei";
+}
+.left-text .p-line2 {
+    font: 1.2vh/1 "Microsoft Yahei";
+}
+.right-search {
+    position: absolute;
+    right: 21.5%;
+    bottom: 0;
+    width: 24%;
+    height: 50%;
+    background: url(../imgs/footupright.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: right;
+}
+.right-search .search {
+    width: 60%;
+    height: 100%;
+    /*padding-left: 8%;*/
+    color: black;
+    background: transparent;
+    outline: none;
+    border: 0;
+    border-color: #fff;
+}
+.right-search .search-btn {
+    width: 32%;
+    height: 94%;
+    font: 2.4vh/1 "Microsoft";
+    background: transparent;
+    outline: none;
+    border: 0;
+    margin-right:1%;
+}
+.right-search .iconfont {
+    font-size: 2.4vh;
+}
+.foot-mid {
+    width: 100%;
+    height: 100%;
+}
+.f-mid-warp {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.f-mid-dl {
+    height: 100%;
+    flex: 1;
+}
+.f-mid-dl dt {
+    font: 1.8vh/6 'Microsoft Yahei';
+    cursor: default;
+}
+.f-mid-dl dd {
+    font: 1.2vh/2 'Microsoft Yahei';
+    cursor: default;
+}
+.f-mid-dl dd i {
+    font: 1.4vh/1.4 'Microsoft Yahei';
+}
+.foot-a {
+    color: #fff;
+}
+.foot-a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.f-mid-warp a {
+    color: #fff;
+    text-decoration: none;
+}
+.foot-down {
+    color: #fff;
+    width: 100%;
+    height: 0;
+    padding-bottom: 2.6%;
+    position: relative;
+    background-color: #2e7ec3;
+}
+.foot-down-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 21%;
+    cursor: default;
+    font: 1.3vh/5vh 'Microsoft Yahei';
+}
+
+
+
+/*  关于我们  banner  */
+.about-us-up {
+    width: 100%;
+    height: 0;
+    padding-bottom: 41.66%;
+    position: relative;
+    background: url('../imgs/aboutus.png') no-repeat;
+    background-size: 100%;
+}
+.about-us-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ab-us-mask {
+    width: 59.375%;
+    height: 100%;
+    float: right;
+    background: url('../imgs/banner-left.png') no-repeat;
+    background-size: 100%;
+}
+.ab-us-text {
+    border: 3px solid #fff;
+    padding: 2% 3%;
+    position: absolute;
+    top:27%;
+    left: 36%;
+    z-index: 2;
+    color: #fff;
+    font: 6.6vh/1.6 'Microsoft Yahei';
+    font-weight: 700;
+    text-align: center;
+    cursor: default;
+}
+.ab-us-text>.ad {
+    width: 100%;
+}
+
+
+/*  公司简介  */
+.about-us-mid {
+    width: 100%;
+    height: 0;
+    padding-bottom: 43.75%;
+    position: relative;
+}
+.au-mid-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.company-profile {
+    width: 62.6%;        /*  1202px  */
+    height: 83.33%;     /*  700px  */
+    margin: 7.2% auto;
+    /*background: palegreen;*/
+    position: relative;
+}
+.company-profile-left {
+    width: 46.6%;
+    height: 95.7%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0.3vh solid #2e7ec3;
+}
+.company-profile-left>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 3%;
+    left: 4%;
+}
+.company-right-up {
+    width: 42.76%;
+    height: 42.86%;
+    /*padding: 0.1% 2%;*/
+    /*background-color: plum;*/
+    position: absolute;
+    right: 2%;
+    top: 3.5%;
+}
+.company-right-up h3 {
+    margin-top: 0;
+}
+.company-right-up .p-line2 {
+    margin-top: 3%;
+    font: 1.4vh/1.4 'Microsoft Yahei';
+}
+.company-right-down {
+    width: 42.6%;
+    height: 45%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 0.3vh solid #2e7ec3;
+}
+.company-right-down>img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    right: 3%;
+    bottom: 4%;
+}
+
+.company-team {
+    margin-top: 6%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 21%;
+    position: relative;
+}
+.company-team-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../imgs/company-team.png') no-repeat;
+    background-size: 100%;
+}
+.company-team-text {
+    width: 62%;
+    height: 100%;
+    margin: 0 auto;
+}
+.company-text-count {
+    width: 50%;
+    height: 100%;
+    padding: 5% 0;
+    color: #fff;
+    float: right;
+}
+.company-text-count h3 {
+    font: 2.4vh/1.6 'Microsoft Yahei';
+}
+.company-text-count p {
+    font: 1.4vh/1.6 'Microsoft Yahei';
+}
+.p-warp {
+    margin-top: 6%;
+}
+
+/*  员工风采  */
+.staff-style {
+    width: 100%;
+    height: 0;
+    padding-bottom: 31.25%;
+    background: url("../imgs/staff-style.png") no-repeat;
+    background-size: 100%;
+}
+
+/*  团队优势  */
+.team-advantage {
+    width: 100%;
+    height: 0;
+    padding-bottom: 47.7%;
+    position: relative;
+}
+.team-advantage-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.team-advantage-warp {
+    width: 62.6%;
+    height: 75.5%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+.team-advantage-left {
+    width: 32%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*background-color: plum;*/
+}
+.team-advantage-mid {
+    width: 32%;
+    height: 100%;
+    margin: 0 auto;
+    /*background-color: plum;*/
+}
+.team-advantage-right {
+    width: 32%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*background-color: plum;*/
+}
+.team-ad-img {
+    width: 100%;
+    height: 36.7%;
+}
+.team-ad-text {
+    width: 100%;
+    height: 36.7%;
+    padding: 2.01% 2%;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.team-ad-text h3 {
+    font: 1.6vh/1 'Microsoft Yahei';
+    margin-bottom: 8%;
+}
+.team-ad-text p {
+    font: 1.4vh/1.4 'Microsoft Yahei';
+}
+
+
+/*  加入我们  */
+.join-us {
+    width: 100%;
+    height: 0;
+    padding-bottom: 41%;
+    background: #fff url('../imgs/map_bg.png') 0 0 no-repeat;
+    position: relative;
+}
+.join-us-container {
+    width: 100%;
+    height: 100%;
+    background-color: #415060;
+    opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.join-us-count {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.join-us-warp {
+    width: 62.5%;
+    height: 76%;
+    color: #fff;
+    margin: 4% auto;
+}
+.join-us-left {
+    width: 47%;
+    height: 100%;
+    padding-top: 3%;
+    float: left;
+}
+.join-us-right {
+    width: 47%;
+    height: 100%;
+    padding-top: 3%;
+    float: right;
+    /*border: 1px solid blue;*/
+}
+.join-us-title {
+    margin-bottom: 6%;
+}
+.join-us-left-down {
+    width: 100%;
+    height: 78%;
+    position: relative;
+}
+.phone-warp,
+.emil-warp,
+.ie-warp,
+.address-warp {
+    width: 47%;
+    height: 46%;
+    position: absolute;
+}
+.phone-warp {
+    top: 0;
+    left: 0;
+}
+.emil-warp {
+    top: 0;
+    right: 0;
+}
+.ie-warp {
+    left: 0;
+    bottom: 0;
+}
+.address-warp {
+    right: 0;
+    bottom: 0;
+}
+.phone-container,
+.emil-container,
+.ie-container,
+.address-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.little-bg {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2d3e50;
+    opacity: 100;
+}
+.phone-count,
+.emil-count,
+.ie-count,
+.address-count {
+    width: 95%;
+    height: 95%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #2e7ec1;
+    text-align: center;
+    padding: 0 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.join-us-left-down .iconfont {
+    font-size: 4.4vh;
+    line-height: 1.8;
+}
+.join-us-left-down .p-line2 {
+    font: 1.8vh/1.8 'Microsoft Yahei';
+}
+.join-us-right-down {
+    width: 100%;
+    height: 78%;
+    color: black;
+}
+.join-us-right-down p {
+    color: #bec1c5;
+    display: block;
+    vertical-align: middle;
+    font: 1.8vh/1 'Microsoft Yahei';
+    margin-left: 4%;
+}
+.join-us-right-down .float-left {
+     float: left;
+}
+.join-us-right-down .float-right {
+    float: right;
+}
+.s-mes-name,
+.s-mes-profession,
+.s-mes-emil,
+.s-mes-phone {
+    width: 47%;
+    height: 12.5%;
+    background-color: #fff;
+    margin-bottom: 4%;
+}
+.count-warp {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.count-warp p {
+    margin-right: 2%;
+}
+.join-us-right-down .s-mes-net {
+    width: 100%;
+    height: 12.5%;
+    background-color: #fff;
+    margin-bottom: 4%;
+}
+.s-mes-net p {
+    margin: 0 2%;
+}
+.s-mes-message {
+    width: 100%;
+    height: 35%;
+    margin-bottom: 4%;
+}
+.s-mes-message textarea {
+    width: 100%;
+    height: 100%;
+    padding: 2% 2%;
+}
+.s-mes-message textarea::-webkit-input-placeholder {
+    font: 1.8vh/1 'Microsoft Yahei';
+    color: #bec1c5;
+}
+.s-mes-message textarea:-moz-placeholder {
+    font: 1.8vh/1 'Microsoft Yahei';
+    color: #bec1c5;
+}
+.s-mes-message textarea::-moz-placeholder {
+    font: 1.8vh/1 'Microsoft Yahei';
+    color: #bec1c5;
+}
+.s-mes-message textarea:-ms-input-placeholder {
+    font: 1.8vh/1 'Microsoft Yahei';
+    color: #bec1c5;
+}
+.s-mes-btn {
+    width: 30%;
+    height: 8.5%;
+    background-color: #2e7ec1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.s-mes-btn .send {
+    color: #fff;
+    font: 1.8vh/1 'Microsoft Yahei';
+}
+.input-text {
+    border: none;
+    width: 80%;
+}
+
+/*    真诚服务    */
+.s-s-banner {
+    width: 100%;
+    height: 0;
+    padding-bottom: 41.66%;
+    position: relative;
+    background: url('../imgs/banner-1.png') no-repeat;
+    background-size: 100%;
+}
+.s-s-banner-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.s-s-core-container .common-title {
+    height: 12%;
+}
+.s-s-banner-mask {
+    width: 59.375%;
+    height: 100%;
+    float: right;
+    background: url('../imgs/banner-left.png') no-repeat;
+    background-size: 100%;
+}
+.s-s-banner-text {
+    border: 0.3vh solid #fff;
+    padding: 2% 3%;
+    position: absolute;
+    top: 27%;
+    left: 36%;
+    z-index: 2;
+    color: #fff;
+    font: 6.6vh/1.6 'Microsoft Yahei';
+    font-weight: 700;
+    text-align: center;
+}
+.s-s-banner-text>.ad {
+    width: 100%;
+}
+.s-s-core {
+    width: 100%;
+    height: 0;
+    padding-bottom: 90%;
+    position: relative;
+}
+.s-s-core-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.service-content {
+    width: 100%;
+    height: 0;
+    padding-bottom: 76%;
+    position: relative;
+}
+.service-content-container {
+    /*width: 62.5%;*/
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.service-content-warp {
+    width: 62.5%;
+    height: 100%;
+    margin: 0 auto;
+}
+.service-content1,
+.service-content2,
+.service-content3 {
+    width: 100%;
+    height: 31.5%;
+    position: relative;
+}
+.service-content2 {
+    margin: 3% 0;
+}
+.service-content-bg {
+    width: 31.6%;
+    height: 82.6%;
+    border: 0.3vh solid #2e7ec3;
+}
+.service-cont {
+    width: 97.5%;
+    height: 93.5%;
+    background-color: #ebebeb;
+}
+.service-cont img {
+    width: 56%;
+    height: 100%;
+}
+.posi-t-l {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.posi-t-r {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.posi-b-r {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.posi-b-l {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.service-cont-text {
+    width: 44%;
+    height: 100%;
+    padding: 1% 2%;
+}
+.service-cont-mid {
+    text-align: right;
+}
+
+.line {
+    width: 25%;
+    height: 0;
+    margin: 0 0 10%;
+    border: 1px solid #2e7ec3;
+}
+.service-cont-mid .line {
+    margin-left: 75%;
+}
+.service-cont-text p {
+    font: 1.4vh/1.4 'Microsoft Yahei';
+}
+
+.s-s-business {
+    margin-top: 3%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 24%;
+    position: relative;
+}
+.s-s-business-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../imgs/business-service.png") no-repeat;
+    background-size: 100%;
+}
+.business-service {
+    width: 62.5%;
+    height: 100%;
+    margin: 0 auto;
+}
+.business-service-cont {
+    width: 65%;
+    height: 100%;
+}
+
+.business-service-up,
+.business-service-down {
+    width: 100%;
+    height: 50%;
+    color: #fff;
+    position: relative;
+}
+.business-service-up h3 {
+    font: 3.0vh/1 'Microsoft Yahei';
+}
+.business-service-up .posi-b-l {
+    bottom: 15%;
+}
+.business-service-down p {
+    font: 1.4vh/1.4 'Microsoft Yahei';
+}
+
+.client {
+    width: 100%;
+    height: 0;
+    padding-bottom: 32.4%;
+    position: relative;
+}
+.client .common-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.client-show {
+    width: 62.5%;
+    height: 70%;
+    margin: 0 auto;
+}
+.client-show ul {
+    width: 100%;
+    height: 60%;
+    margin-top: 6%;
+}
+.client-show li {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.client-show .margin-right {
+    margin-right: 6.66666%
+}
+.client-show li img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*    加入我们    */
+.recruit-banner {
+    width: 100%;
+    height: 0;
+    padding-bottom: 41.66%;
+    position: relative;
+    background: url('../imgs/aboutus.png') no-repeat;
+    background-size: 100%;
+}
+.recruit-banner-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.recruit-banner-mask {
+    width: 59.375%;
+    height: 100%;
+    float: right;
+    background: url('../imgs/banner-left.png') no-repeat;
+    background-size: 100%;
+}
+.recruit-banner-text {
+    width: 45.6%;
+    height: 24.125%;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    z-index: 2;
+}
+.recruit-banner-text img {
+    width: 100%;
+    height: 100%;
+}
+.recruit-detail {
+    width: 100%;
+    height: 0;
+    padding-bottom: 38.125%;
+    position: relative;
+}
+.recruit-detail-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.recruit-detail-cont {
+    width: 62.5%;
+    height: 80%;
+    margin: 4% auto;
+    position: relative;
+}
+.recruit-detail-cont .posi {
+    width: 48%;
+    height: 48%;
+    padding: 0.5% 2%;
+    border: 1px solid #2e7ec3;
+}
+.recruit-detail-cont .posi p {
+    font: 1.4vh/1.4 'Microsoft Yahei';
+}
+.recruit-detail-cont .posi ol {
+    margin-left: 2%;
+}
+.recruit-detail-cont .posi li {
+    font: 1.2vh/1.2 'Microsoft Yahei';
+}
